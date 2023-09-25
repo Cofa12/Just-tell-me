@@ -1,0 +1,106 @@
+/* ! Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* width: 100vw;
+  min-height: 100vh; */
+  background-color: #517ecd;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+button {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ? End Global Rules */
+/* ! Start Compoenents */
+
+.container {
+  margin: auto;
+
+  position: relative;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* ? End Components */
+
+.container-registeration {
+  width: 100%;
+  height: 100%;
+}
+.registeration {
+  padding: 5rem 4rem;
+
+  background-color: white;
+  width: fit-content;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .registeration {
+    width: 100%;
+    height: 100%;
+  }
+}
+.registeration h2 {
+  text-transform: capitalize;
+}
+
+.registeration form input {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 3px solid #adadad;
+  padding: 1rem 0.5rem 0.5rem;
+}
+.registeration form input:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.registeration .form-btn {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  background-color: #527bcb;
+  text-transform: capitalize;
+  color: white;
+}
+.registeration .other-login-options p {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #adadad;
+}
+.registeration .other-login-options p:first-of-type {
+  margin-bottom: 0.5rem;
+}
