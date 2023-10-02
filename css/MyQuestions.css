@@ -28,18 +28,20 @@
   background-color: red;
 }
 .page {
+  width: 80%;
+  margin: auto;
   margin-top: 1rem;
+  /* background-color: blue; */
 }
 .page.sent {
 }
 .page.active {
 }
 .page.received .my-question {
-  background-color: yellow;
   border-radius: 10px;
   text-align: center;
-  width: 80%;
   padding: 2rem;
+  background-color: yellow;
 
   margin: auto;
 }
@@ -65,4 +67,11 @@
   padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
+}
+.page.received .received {
+  padding: 1rem 1rem;
+  background-color: orange;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
 }
